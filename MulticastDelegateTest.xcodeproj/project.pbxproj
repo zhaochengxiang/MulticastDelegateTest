@@ -13,6 +13,9 @@
 		05F1AD451E6025C800FBA22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F1AD431E6025C800FBA22D /* Main.storyboard */; };
 		05F1AD471E6025C800FBA22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F1AD461E6025C800FBA22D /* Assets.xcassets */; };
 		05F1AD4A1E6025C800FBA22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F1AD481E6025C800FBA22D /* LaunchScreen.storyboard */; };
+		05F1AD531E6025E500FBA22D /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F1AD521E6025E500FBA22D /* GCDMulticastDelegate.m */; };
+		05F1AD571E6026B300FBA22D /* Object1.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F1AD561E6026B300FBA22D /* Object1.m */; };
+		05F1AD5A1E6026F800FBA22D /* Object2.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F1AD591E6026F800FBA22D /* Object2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		05F1AD461E6025C800FBA22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05F1AD491E6025C800FBA22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F1AD4B1E6025C800FBA22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F1AD511E6025E500FBA22D /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		05F1AD521E6025E500FBA22D /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		05F1AD541E60261600FBA22D /* MyTestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTestProtocol.h; sourceTree = "<group>"; };
+		05F1AD551E6026B300FBA22D /* Object1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object1.h; sourceTree = "<group>"; };
+		05F1AD561E6026B300FBA22D /* Object1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object1.m; sourceTree = "<group>"; };
+		05F1AD581E6026F800FBA22D /* Object2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object2.h; sourceTree = "<group>"; };
+		05F1AD591E6026F800FBA22D /* Object2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,13 @@
 				05F1AD3E1E6025C800FBA22D /* AppDelegate.m */,
 				05F1AD401E6025C800FBA22D /* ViewController.h */,
 				05F1AD411E6025C800FBA22D /* ViewController.m */,
+				05F1AD511E6025E500FBA22D /* GCDMulticastDelegate.h */,
+				05F1AD521E6025E500FBA22D /* GCDMulticastDelegate.m */,
+				05F1AD541E60261600FBA22D /* MyTestProtocol.h */,
+				05F1AD551E6026B300FBA22D /* Object1.h */,
+				05F1AD561E6026B300FBA22D /* Object1.m */,
+				05F1AD581E6026F800FBA22D /* Object2.h */,
+				05F1AD591E6026F800FBA22D /* Object2.m */,
 				05F1AD431E6025C800FBA22D /* Main.storyboard */,
 				05F1AD461E6025C800FBA22D /* Assets.xcassets */,
 				05F1AD481E6025C800FBA22D /* LaunchScreen.storyboard */,
@@ -151,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F1AD531E6025E500FBA22D /* GCDMulticastDelegate.m in Sources */,
 				05F1AD421E6025C800FBA22D /* ViewController.m in Sources */,
 				05F1AD3F1E6025C800FBA22D /* AppDelegate.m in Sources */,
 				05F1AD3C1E6025C800FBA22D /* main.m in Sources */,
+				05F1AD571E6026B300FBA22D /* Object1.m in Sources */,
+				05F1AD5A1E6026F800FBA22D /* Object2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 85P36HY49V;
 				INFOPLIST_FILE = MulticastDelegateTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zcx.MulticastDelegateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 85P36HY49V;
 				INFOPLIST_FILE = MulticastDelegateTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zcx.MulticastDelegateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
