@@ -332,6 +332,7 @@
 				05F1AD501E6025C800FBA22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
